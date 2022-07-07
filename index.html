@@ -1,12 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate and help people</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/donate-icon.webp">
 </head>
+
 <body>
-    
+    <main>
+        <section>
+            <div>
+                <img src="images/corona-panedemic1.jpg" class="pandemic-image" alt="this is panedemic situation image">
+            </div>
+            <div class="on-the-image">
+                <h1 id="white-color">let help Those Who<br>are More in Need</h1>
+                <p id="small">Help the hungry and unemployed people affected due to corona virus</p>
+                <a href="#" class="donate-button">Donate Now</a>
+            </div>
+        </section>
+        <section class="middleon">
+            <div class="donate-today">
+                <h2>Donate Today</h2>
+                <p id="middle">please contribute some money for helps many people.helps children </p>
+            </div>
+        </section>
+
+        <section class="donate-amount">
+            <div class="add-space"><span>&#8377;</span>100</div>
+            <div id="design" class="add-space"><span>&#8377;</span>200</div>
+            <div class="add-space"><span>&#8377;</span>500</div>
+            <div class="add-space"><span>&#8377;</span>1000 </div>
+            <div class="add-space"><span>&#8377;</span>500 </div>
+        </section>
+
+        <div class="amount">
+            <form action="">
+                <label for="donate">other amount(Rupee)</label>
+                <input type="text" name="donate-amount">
+                <hr id="color-change">
+                <a href="#" class="donate-button" id="nxt-donate-btn">Donate Now</a>
+            </form>
+        </div>
+
+        <section>
+            <div class="donate-today donate-plan">
+                <h2>Our Donate Plan</h2>
+                <p id="middle">please contribute some money for helps many people.</p>
+            </div>
+        </section>
+
+        <section class="Experience">
+            <div class="flexible-container">
+                <div class="helping-item" id="food-family">
+                    <img src="icons/food.png" alt="food icons">
+                    <h1>Food a Family</h1>
+                    <p>Amet minim mollit non deserunt
+                        ullamco est sit aliqua dolor do amet
+                        sint. Velit officia consequat duis enim
+                        velit mollit.</p>
+                </div>
+                <div class="helping-item" id="shelter-for-family">
+                    <img src="icons/shelter.png" alt="shelter icons">
+                    <h1>Shelter for a family</h1>
+                    <p>Amet minim mollit non deserunt
+                        ullamco est sit aliqua dolor do amet
+                        sint. Velit officia consequat duis enim
+                        velit mollit.</p>
+                </div>
+                <div class="helping-item" id="edu-child">
+                    <img src="icons/Frame-1.png" alt="">
+                    <h1>Education for a Child</h1>
+                    <p>Amet minim mollit non deserunt
+                        ullamco est sit aliqua dolor do amet
+                        sint. Velit officia consequat duis enim
+                        velit mollit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- add something new(add payment page) -->
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-default credit-card-box">
+                    <div class="panel-heading display-table">
+                        <div class="row display-tr">
+                            <h3 class="panel-title display-td">Payment Details</h3>
+                            <div class="display-td">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" id="payment-form">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label for="cardNumber">CARD NUMBER</label>
+                                        <div class="input-group">
+                                            <input type="tel" class="form-control" name="cardNumber"
+                                                placeholder="Valid Card Number" autocomplete="cc-number" required
+                                                autofocus />
+                                            <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="cardExpiry"><span class="hidden-xs">EXPERY</span><span
+                                                class="visible-xs-inline"></span> DATE</label>
+                                        <input type="tel" class="form-control" name="cardExpiry" placeholder="MM / YY"
+                                            autocomplete="cc-exp" required />
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                        <label for="cardCVC">CV CODE</label>
+                                        <input type="tel" class="form-control" name="cardCVC" placeholder="CVC"
+                                            autocomplete="cc-csc" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+
+                                        <input type="text" class="form-control" name="paymentAmount"
+                                            placeholder="Enter Amount" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <button class="btn donate-button btn-lg btn-block" type="submit"
+                                        id="payment-btn">Make
+                                        Payment</button>
+                                </div>
+                            </div>
+                            <div class="row" style="display:none;">
+                                <div class="col-xs-12">
+                                    <p class="payment-errors"></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <section>
+                <div class="donate-today donate-plan get-my-updates">
+                    <h2>Get My Updates</h2>
+                    <p id="middle">please contribute everyone for helps others.</p>
+                </div>
+            </section>
+
+            <div class="pink-color">
+                <form action="">
+                    <input type="email" class="button-one" placeholder="Enter Your Email id">
+                    <label class="button-two" href="#">Subscribe</label>
+                </form>
+            </div>
+    </main>
+    <footer class="black-color">
+        <h1>Be Humble</h1>
+        <p>i'm gonna do it </p>
+    </footer>
 </body>
+
 </html>
